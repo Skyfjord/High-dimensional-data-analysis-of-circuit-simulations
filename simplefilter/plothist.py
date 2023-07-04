@@ -1,4 +1,4 @@
-import dataset3 as dataset
+import dataset as dataset
 import numpy as np
 import matplotlib.pyplot as plt
 
@@ -13,7 +13,4 @@ for i in range(dataset.dim-1,-1,-1):
     plt.hist(np.array(dataset.dataN)[:,i],bins=bins,alpha=alpha,color="red",range=(0,1))
     plt.hist(np.array(dataset.dataP)[:,i],bins=bins,alpha=alpha,color="green",range=(0,1))
     
-    # plt.hist(np.array(dataset.dataN)[:,i],bins=bins,alpha=alpha,color="red")
-    # plt.hist(np.array(dataset.dataP)[:,i],bins=bins,alpha=alpha,color="green")
-# plt.title("Analysis of long wave")
 plt.show()
